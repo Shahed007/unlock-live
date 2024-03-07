@@ -1,11 +1,10 @@
-import Image from "next/image";
+import Hero from "@/pages/home/Hero";
+
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-7xl">
-        Hello World
-      </h1>
-    </div>
+    <main>
+      <Hero />
+    </main>
   );
 }

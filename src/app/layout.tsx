@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-openSans">
-        <header>
+        <header className="border-b border-b-[#101113]">
           <Navbar />
         </header>
         {children}
