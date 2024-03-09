@@ -23,7 +23,7 @@ const Hero = () => {
         alt="image "
       />
       <Image
-        className="absolute left-28 z-10  bottom-0"
+        className="absolute left-28 z-10 w-[240px]  bottom-0"
         src={image3}
         alt="image "
       />
@@ -65,6 +65,14 @@ const Hero = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="flex items-center gap-2 mt-14">
+            <span className="inline-block h-3 w-3 bg-gray-300 rounded-full"></span>
+            <span className="inline-block h-3 w-3 bg-gray-300 rounded-full"></span>
+            <span className="inline-block h-3 w-3 bg-gray-300 rounded-full"></span>
+            <span className="inline-block h-4 w-4 bg-primary_color rounded-full"></span>
+            <span className="inline-block h-3 w-3 bg-gray-300 rounded-full"></span>
           </div>
         </div>
         <div className="flex-1">
