@@ -12,7 +12,7 @@ const Choosing = () => {
         src={whyChooseBg}
         alt="why choose background image"
       />
-      <div className="container flex lg:gap-0 gap-10 lg:flex-row flex-col items-center relative z-20">
+      <div className="container flex lg:gap-0 gap-20 lg:flex-row flex-col items-center relative z-20">
         <div className="flex-1">
           <h4 className="flex items-center gap-2 before:inline-block before:h-[2px] before:w-[50px] before:bg-gradient-to-l before:from-secondary_color before:to-secondary_color/10 text-base text-secondary_color italic">
             Why Choose Us
