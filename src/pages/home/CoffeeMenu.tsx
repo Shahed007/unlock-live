@@ -5,11 +5,17 @@ import menuCup4 from "@/assets/images/menu-cup-4.png";
 import BtnPrimary from "@/components/btn/BtnPrimary";
 import PrimaryTitle from "@/components/title/PrimaryTitle";
 import Image, { StaticImageData } from "next/image";
+import backgroundImage from "@/assets/images/hero-footer-image.png";
 
 const CoffeeMenu = () => {
   return (
-    <section className="my-[120px]">
-      <div className="container">
+    <section className="my-[120px] relative">
+      <Image
+        className="absolute -bottom-20 right-0 w-[200px] z-10"
+        src={backgroundImage}
+        alt="background image "
+      />
+      <div className="container relative z-20">
         <div className="flex flex-col mb-12 justify-center items-center">
           <h3 className="text-secondary_color font-playfair_display text-base italic before:inline-block after:inline-block before:h-[2px] after:h-[2px] before:w-[80px] flex items-center gap-3 after:w-[80px] before:bg-gradient-to-l before:from-secondary_color before:to-secondary_color/10 after:bg-gradient-to-l after:from-secondary_color/10 after:to-secondary_color">
             Coffee Menu
