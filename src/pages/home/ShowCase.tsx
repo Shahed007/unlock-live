@@ -38,7 +38,7 @@ const ShowCase = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-4  ">
-          <div className="col-span-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
+          <div className="col-span-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             <div className="lg:col-span-1 h-72 overflow-hidden rounded-xl">
               <Image
                 className="h-full w-full object-cover duration-500 hover:scale-125"
@@ -46,7 +46,7 @@ const ShowCase = () => {
                 alt="gallery image 1"
               />
             </div>
-            <div className="lg:col-span-4 h-72 overflow-hidden rounded-xl">
+            <div className="lg:col-span-3 h-72 overflow-hidden rounded-xl">
               <Image
                 className="h-full w-full object-cover  duration-500 hover:scale-125"
                 src={galleryImage2}
