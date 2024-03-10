@@ -52,30 +52,29 @@ const ShowCase = () => {
               alt="gallery image 2"
             />
           </div>
-          
-         
+
           <div className="col-span-4 grid grid-cols-6 gap-6">
-          <div className="col-span-1 h-72 overflow-hidden rounded-xl">
-            <Image
-              className="h-full w-full object-cover duration-500 hover:scale-125"
-              src={galleryImage3}
-              alt="gallery image 1"
-            />
-          </div>
-          <div className="col-span-3 h-72 overflow-hidden rounded-xl">
-            <Image
-              className="h-full w-full object-cover duration-500 hover:scale-125"
-              src={galleryImage4}
-              alt="gallery image 1"
-            />
-          </div>
-          <div className="col-span-2 h-72 overflow-hidden rounded-xl">
-            <Image
-              className="h-full w-full object-cover duration-500 hover:scale-125"
-              src={galleryImage5}
-              alt="gallery image 1"
-            />
-          </div>
+            <div className="col-span-1 h-72 overflow-hidden rounded-xl">
+              <Image
+                className="h-full w-full object-cover duration-500 hover:scale-125"
+                src={galleryImage3}
+                alt="gallery image 1"
+              />
+            </div>
+            <div className="col-span-3 h-72 overflow-hidden rounded-xl">
+              <Image
+                className="h-full w-full object-cover duration-500 hover:scale-125"
+                src={galleryImage4}
+                alt="gallery image 1"
+              />
+            </div>
+            <div className="col-span-2 h-72 overflow-hidden rounded-xl">
+              <Image
+                className="h-full w-full object-cover duration-500 hover:scale-125"
+                src={galleryImage5}
+                alt="gallery image 1"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -91,7 +90,7 @@ const categories: string[] = [
   "Dinner",
   "Lunch",
   "Cookies",
-  "Cookies",
+  "Bakery",
 ];
 
 export default ShowCase;

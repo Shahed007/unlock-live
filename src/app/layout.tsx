@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/pages/shared/navbar/Navbar";
+import Footer from "@/pages/shared/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
+        <Footer/>
       </body>
     </html>
   );
