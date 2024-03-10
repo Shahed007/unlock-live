@@ -136,7 +136,7 @@ const Navbar = () => {
             <span>Sign In</span>
           </div>
         </div>
-        <button onClick={() => setOpen(!isOpen)}>
+        <button className="lg:hidden inline-block" onClick={() => setOpen(!isOpen)}>
           {isOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ const Navbar = () => {
         </button>
       </nav>
       <div
-        className={`absolute duration-300  overflow-hidden top-[65px] left-0 w-full bg-white shadow-md ${
+        className={`absolute duration-300 lg:hidden block  overflow-hidden md:top-[81px] top-[65px] left-0 w-full bg-white shadow-md ${
           isOpen ? "h-[60vh]" : "h-0"
         }`}
       >
