@@ -8,7 +8,7 @@ import cup3 from "@/assets/images/cup-3.png";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <section className="hero-section-height relative  ">
+    <section className="hero-section-height relative lg:py-0 py-20  ">
       <div className="h-full   absolute left-0 top-0   w-full">
         <div className="max-w-7xl mx-auto  w-full h-full border-l border-l-[hsla(220,9%,7%,1)]"></div>
       </div>
@@ -28,28 +28,30 @@ const Hero = () => {
         alt="image "
       />
 
-      <div className="container h-full z-20 flex items-center relative ">
+      <div className="container h-full z-20 flex lg:flex-row flex-col items-center relative ">
         <div className="flex-1">
           <h2 className="font-poppins italic font-medium text-base mb-10">
             WELCOME TO OUR
           </h2>
-          <h1 className="text-[110px] leading-10 font-playfair_display text-primary_color">
+          <h1 className="md:text-[110px] text-5xl sm:text-8xl leading-3 sm:leading-10 font-playfair_display text-primary_color">
             Unlocklive
           </h1>
-          <h3 className="font-playfair_display mt-14 text-3xl mb-4 ">
+          <h3 className="font-playfair_display mt-7 sm:mt-14 text-2xl sm:text-3xl mb-4 ">
             Elevating Your Coffee Experience
           </h3>
-          <p className="font-openSans">
+          <p className="font-openSans text-base">
             Unlocklive embodies our commitment to transforming the simple act of
             sipping coffee into a refined and memorable journey. At Epicurean,
             we take pride in curating an exceptional coffee experience that
             transcends the ordinary.
           </p>
 
-          <div className="mt-12 flex justify-between items-center">
-            <button className="font-openSans bg-secondary_color text-white px-7 py-4 rounded-xl font-medium text-base">
-              EXPLORE OUR MENU
-            </button>
+          <div className="mt-12 md:gap-0 gap-6 flex md:flex-row flex-col justify-between md:items-center">
+            <div>
+              <button className="font-openSans bg-secondary_color text-white px-7 py-4 rounded-xl font-medium text-base">
+                EXPLORE OUR MENU
+              </button>
+            </div>
             <div className="flex items-center gap-6">
               <div className="flex items-center">
                 <Image src={cup1} alt="Cup 1" />
@@ -57,10 +59,10 @@ const Hero = () => {
                 <Image src={cup3} alt="Cup 3" className="-ml-3" />
               </div>
               <div>
-                <h4 className="text-2xl font-semibold text-primary_color font-playfair_display">
+                <h4 className="sm:text-2xl text-xl font-semibold text-primary_color font-playfair_display">
                   1200+
                 </h4>
-                <p className="font-openSans text-xl font-normal text-primary_color">
+                <p className="font-openSans text-base sm:text-xl font-normal text-primary_color">
                   Tasty Variant Coffee
                 </p>
               </div>

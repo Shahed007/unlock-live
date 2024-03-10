@@ -12,13 +12,13 @@ const Choosing = () => {
         src={whyChooseBg}
         alt="why choose background image"
       />
-      <div className="container flex items-center relative z-20">
+      <div className="container flex lg:gap-0 gap-10 lg:flex-row flex-col items-center relative z-20">
         <div className="flex-1">
           <h4 className="flex items-center gap-2 before:inline-block before:h-[2px] before:w-[50px] before:bg-gradient-to-l before:from-secondary_color before:to-secondary_color/10 text-base text-secondary_color italic">
             Why Choose Us
           </h4>
           <PrimaryTitle>
-            Choosing Unlocklive, A Taste of <br /> Perfection
+            Choosing Unlocklive, A Taste of <br className="sm:inline-block hidden" /> Perfection
           </PrimaryTitle>
           <p className="text-base font-openSans text-primary_color mt-5">
             Unlocklive takes pride in the art of roasting, transforming raw
@@ -29,9 +29,9 @@ const Choosing = () => {
               <h4 className="font-playfair_display text-[44px]">20+</h4>
               <p>Years Experience</p>
             </div>
-            <div className="relative">
-              <div className="absolute top-0 left-0 w-full h-full py-3 shadow-sm border rounded-md rotate-3"></div>
-              <div className="absolute top-0 left-0 w-full h-full py-3 shadow-sm border rounded-md flex items-center flex-col justify-center">
+            <div className="relative h-full w-full">
+              <div className="lg:absolute lg:block hidden top-0 left-0 w-full h-full py-3 shadow-sm border rounded-md rotate-3"></div>
+              <div className="lg:absolute top-0 left-0 w-full h-full py-3 shadow-sm border rounded-md flex items-center flex-col justify-center">
                 <h4 className="font-playfair_display text-[44px]">100+</h4>
                 <p>Master Chefs</p>
               </div>
@@ -50,7 +50,7 @@ const Choosing = () => {
           </div>
         </div>
         <div className="flex-1  flex justify-center">
-          <div className="w-[60%]   p-3 relative">
+          <div className="lg:w-[60%] w-full   p-3 relative">
             <Image
               className="w-full h-[400px] object-cover relative z-20"
               src={coffeeCup3}

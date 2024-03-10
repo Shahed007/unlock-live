@@ -4,5 +4,11 @@
 @tailwind utilities;
 
 .hero-section-height {
-  height: calc(100dvh - 81px);
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section-height {
+    height: calc(100dvh - 81px);
+  }
 }

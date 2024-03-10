@@ -2,8 +2,8 @@ import line0 from "@/assets/icon/line-0.png";
 import Image from "next/image";
 const Info = () => {
   return (
-    <section className=" bg-[#FFFAF2]  mb-20 h-[200px]">
-      <div className="max-w-5xl mx-auto grid  items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 h-full ">
+    <section className=" bg-[#FFFAF2]  mb-20 lg:h-[200px]">
+      <div className="lg:max-w-5xl lg:px-0 px-4 mx-auto grid w-full items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 h-full ">
         <div className="bg-secondary_color h-full px-4 pt-4 pb-8  rounded-b-lg">
           <div>
             <Image src={line0} alt="line" />
@@ -31,7 +31,7 @@ const Info = () => {
             Play Intro Video
           </h3>
         </div>
-        <div className="border-r pr-4 text-primary_color">
+        <div className="border-r pr-4 text-primary_color text-center lg:text-start">
           <h3 className="font-playfair_display font-semibold mb-4 text-xl ">
             Our Opening Hours
           </h3>
@@ -46,7 +46,7 @@ const Info = () => {
           848 A 28TH ST, Brooklyn New York, UK
           </p>
         </div>
-        <div className=" pr-4 text-primary_color text-right">
+        <div className=" pr-4 text-primary_color lg:text-right text-center lg:pb-0 pb-5">
           <h3 className="font-playfair_display font-semibold mb-4 text-xl ">
           Book A Table Now
           </h3>

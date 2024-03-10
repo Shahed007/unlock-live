@@ -172,7 +172,7 @@ const Navbar = () => {
       </nav>
       <div
         className={`absolute duration-300 lg:hidden block  overflow-hidden md:top-[81px] top-[65px] left-0 w-full bg-white shadow-md ${
-          isOpen ? "h-[60vh]" : "h-0"
+          isOpen ? "h-[400px]" : "h-0"
         }`}
       >
         <div className="container py-10 h-full">
