@@ -2,6 +2,7 @@ import Choosing from "@/pages/home/Choosing";
 import CoffeeMenu from "@/pages/home/CoffeeMenu";
 import Hero from "@/pages/home/Hero";
 import Info from "@/pages/home/Info";
+import NewRecipes from "@/pages/home/NewRecipes";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Info />
       <Choosing />
       <CoffeeMenu />
+      <NewRecipes />
     </main>
   );
 }

@@ -3,19 +3,18 @@ import menuCup2 from "@/assets/images/menu-cup-2.png";
 import menuCup3 from "@/assets/images/menu-cup-3.png";
 import menuCup4 from "@/assets/images/menu-cup-4.png";
 import BtnPrimary from "@/components/btn/BtnPrimary";
+import PrimaryTitle from "@/components/title/PrimaryTitle";
 import Image, { StaticImageData } from "next/image";
 
 const CoffeeMenu = () => {
   return (
-    <section className="mt-[120px]">
+    <section className="my-[120px]">
       <div className="container">
         <div className="flex flex-col mb-12 justify-center items-center">
           <h3 className="text-secondary_color font-playfair_display text-base italic before:inline-block after:inline-block before:h-[2px] after:h-[2px] before:w-[80px] flex items-center gap-3 after:w-[80px] before:bg-gradient-to-l before:from-secondary_color before:to-secondary_color/10 after:bg-gradient-to-l after:from-secondary_color/10 after:to-secondary_color">
             Coffee Menu
           </h3>
-          <h2 className="font-playfair_display text-[44px] text-primary_color font-semibold">
-            Unlocklive Coffee Menu
-          </h2>
+          <PrimaryTitle>Unlocklive Coffee Menu</PrimaryTitle>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {menus.map((item, idx) => (
@@ -55,7 +54,7 @@ const CoffeeMenu = () => {
           ))}
         </div>
         <div className="mt-10 flex justify-center items-center">
-          <BtnPrimary text="View All Menu"/>
+          <BtnPrimary text="View All Menu" />
         </div>
       </div>
     </section>
