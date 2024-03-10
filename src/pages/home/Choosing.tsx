@@ -2,11 +2,17 @@ import coffeeCup3 from "@/assets/images/coffee-cup-3.png";
 import BtnPrimary from "@/components/btn/BtnPrimary";
 import PrimaryTitle from "@/components/title/PrimaryTitle";
 import Image from "next/image";
+import whyChooseBg from "@/assets/images/whay-choose-bg-image.svg";
 
 const Choosing = () => {
   return (
-    <section className="mt-[120px]">
-      <div className="container flex items-center">
+    <section className="mt-[120px] relative">
+      <Image
+        className="absolute top-0 right-0 z-10"
+        src={whyChooseBg}
+        alt="why choose background image"
+      />
+      <div className="container flex items-center relative z-20">
         <div className="flex-1">
           <h4 className="flex items-center gap-2 before:inline-block before:h-[2px] before:w-[50px] before:bg-gradient-to-l before:from-secondary_color before:to-secondary_color/10 text-base text-secondary_color italic">
             Why Choose Us
@@ -43,8 +49,15 @@ const Choosing = () => {
             <BtnPrimary text="Explore Our Menus" />
           </div>
         </div>
-        <div className="flex-1  flex justify-end">
-          <Image src={coffeeCup3} alt="coffee cup image 3" />
+        <div className="flex-1  flex justify-center">
+          <div className="w-[60%]   p-3 relative">
+            <Image
+              className="w-full h-[400px] object-cover relative z-20"
+              src={coffeeCup3}
+              alt="coffee cup image 3"
+            />
+            <div className="absolute bottom-0  left-0 w-full h-[300px] shadow-sm border rounded-b-xl rounded-t-full p-3"></div>
+          </div>
         </div>
       </div>
     </section>
