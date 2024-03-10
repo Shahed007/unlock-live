@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-openSans">
-        <header className="border-b border-b-[#101113]">
+        <header className="border-b border-b-[#101113] relative z-50 ">
           <Navbar />
         </header>
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

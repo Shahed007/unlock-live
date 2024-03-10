@@ -17,6 +17,7 @@ const config: Config = {
       },
       container: {
         center: true,
+        padding: "1rem"
       },
       fontFamily: {
         playfair_display: '"Playfair Display", serif',
