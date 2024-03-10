@@ -25,17 +25,17 @@ const CoffeeMenu = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {menus.map((item, idx) => (
             <div key={idx} className="shadow-sm border p-5 rounded-md  ">
-              <div className="flex items-center gap-3">
-                <div className="w-[12%]">
+              <div className="flex xl:flex-row flex-col items-center gap-3">
+                <div className="xl:w-[12%]">
                   <Image
                     className="h-full w-full"
                     src={item.image}
                     alt="menu cup 1"
                   />
                 </div>
-                <div className="flex-1 flex items-center justify-between gap-4">
-                  <div className="space-y-2">
-                    <h2 className="text-2xl font-semibold font-playfair_display text-primary_color">
+                <div className="flex-1 flex lg:flex-row flex-col items-center justify-between gap-4">
+                  <div className="space-y-2 md:text-start text-center">
+                    <h2 className="sm:text-2xl text-xl font-semibold font-playfair_display text-primary_color">
                       {item.title}
                     </h2>
                     <p className="text-sm font-openSans">{item.description}</p>

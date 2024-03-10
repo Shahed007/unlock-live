@@ -33,7 +33,7 @@ const NewRecipes = () => {
   };
   return (
     <section className="py-20 bg-[#FFFAF2] overflow-hidden">
-      <div className=" grid grid-cols-3 gap-6 pl-16">
+      <div className=" grid grid-cols-1 xl:grid-cols-3 gap-6 px-4 xl:pl-16">
         <div className="col-span-1">
           <h4 className="flex items-center gap-2 before:inline-block before:h-[2px] before:w-[50px] before:bg-gradient-to-l before:from-secondary_color before:to-secondary_color/10 text-base text-secondary_color italic">
             New Recipes
@@ -55,7 +55,9 @@ const NewRecipes = () => {
               slightly believable.
             </p>
           </div>
-          <div className="flex items-center gap-6 mt-10">
+
+
+          <div className="flex flex-row items-center gap-6 mt-10">
             <button
               disabled={currentIndex === 0}
               onClick={handlePrev}
@@ -117,14 +119,23 @@ const NewRecipes = () => {
           <Swiper
             ref={swiperRef}
             modules={[Navigation]}
-            spaceBetween={30}
-            slidesPerView={3}
+            slidesPerView={1}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
             navigation={{ prevEl: "#prev-btn", nextEl: "#next-btn" }}
             className=" "
+            breakpoints={{
+              1340: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+            }}
           >
-            <SwiperSlide className="h-full w-full ml-20 ">
+            <SwiperSlide className="h-full w-full xl:ml-20 ">
               <div className="relative rounded-[28px] h-full overflow-hidden group">
                 <Image
                   className="h-full w-full object-cover"

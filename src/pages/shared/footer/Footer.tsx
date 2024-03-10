@@ -13,7 +13,7 @@ const Footer = () => {
         alt="footer background"
       />
       <div className="container relative z-20 ">
-      <div className="flex items-center justify-between">
+      <div className="flex lg:flex-row flex-col lg:gap-0 gap-6 items-center lg:justify-between">
         <Image src={footerLogo} alt="footer logo" />
         <ul className="flex items-center gap-7 text-white font-openSans">
           {footer_links.map((item, idx) => (

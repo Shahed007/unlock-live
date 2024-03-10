@@ -19,7 +19,7 @@ const ShowCase = () => {
             </div>
           </div>
           <PrimaryTitle>Our Chefs New Creations</PrimaryTitle>
-          <p className="text-lg font-openSans text-[#031811B2] w-[60%] mt-4">
+          <p className="text-lg font-openSans text-[#031811B2] lg:w-[60%] mt-4">
             Behold the extraordinary creations born from the synergy of our
             users&apos; ingenuity and the transformative power of AI, a
             testament to boundless innovation.
@@ -37,38 +37,40 @@ const ShowCase = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-4 ">
-          <div className="col-span-1 h-72 overflow-hidden rounded-xl">
-            <Image
-              className="h-full w-full object-cover duration-500 hover:scale-125"
-              src={galleryImage1}
-              alt="gallery image 1"
-            />
-          </div>
-          <div className="col-span-3 h-72 overflow-hidden rounded-xl">
-            <Image
-              className="h-full w-full object-cover aspect-square duration-500 hover:scale-125"
-              src={galleryImage2}
-              alt="gallery image 2"
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-4  ">
+          <div className="col-span-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
+            <div className="lg:col-span-1 h-72 overflow-hidden rounded-xl">
+              <Image
+                className="h-full w-full object-cover duration-500 hover:scale-125"
+                src={galleryImage1}
+                alt="gallery image 1"
+              />
+            </div>
+            <div className="lg:col-span-4 h-72 overflow-hidden rounded-xl">
+              <Image
+                className="h-full w-full object-cover  duration-500 hover:scale-125"
+                src={galleryImage2}
+                alt="gallery image 2"
+              />
+            </div>
           </div>
 
-          <div className="col-span-4 grid grid-cols-6 gap-6">
-            <div className="col-span-1 h-72 overflow-hidden rounded-xl">
+          <div className="col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+            <div className="lg:col-span-1 h-72 overflow-hidden rounded-xl">
               <Image
                 className="h-full w-full object-cover duration-500 hover:scale-125"
                 src={galleryImage3}
                 alt="gallery image 1"
               />
             </div>
-            <div className="col-span-3 h-72 overflow-hidden rounded-xl">
+            <div className="lg:col-span-3 h-72 overflow-hidden rounded-xl">
               <Image
                 className="h-full w-full object-cover duration-500 hover:scale-125"
                 src={galleryImage4}
                 alt="gallery image 1"
               />
             </div>
-            <div className="col-span-2 h-72 overflow-hidden rounded-xl">
+            <div className="lg:col-span-2 h-72 overflow-hidden rounded-xl">
               <Image
                 className="h-full w-full object-cover duration-500 hover:scale-125"
                 src={galleryImage5}
