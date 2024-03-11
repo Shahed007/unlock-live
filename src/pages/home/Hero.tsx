@@ -8,9 +8,9 @@ import cup3 from "@/assets/images/cup-3.png";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <section className="hero-section-height relative lg:py-0 py-20  ">
-      <div className="h-full   absolute left-0 top-0   w-full">
-        <div className="max-w-7xl mx-auto  w-full h-full border-l border-l-[hsla(220,9%,7%,1)]"></div>
+    <section className="hero-section-height relative lg:py-0 py-20    ">
+      <div className="h-full   absolute left-24 top-0   w-full">
+        <div className="   w-full h-full border-l border-l-[hsla(220,9%,7%,1)]"></div>
       </div>
       <Image
         className="absolute left-0 top-0 w-[300px] z-10"
